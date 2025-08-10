@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLP Web Dev Sign-Up (HTML only)</title>
+</head>
+<body>
+  <header>
+    <h1>Power Learn Project — Web Dev Sign-Up</h1>
+    <p>This page is HTML5 only. It shows lists, a table, media, and a complete form.</p>
+  </header>
+
+  <main>
+    <section id="content">
+      <h2>You are expected to demonstrate the ability to:</h2>
+      <ul>
+        <li>Use lists and tables effectively to organize content for clarity and accessibility.</li>
+        <li>Embed media content such as images, audio, or video using semantic HTML5 elements.</li>
+        <li>Build structured HTML5 forms that are both usable and visually intuitive.</li>
+        <li>Apply various HTML5 form attributes to improve user interaction.</li>
+        <li>Use built-in validation techniques to minimize incorrect data input without relying on JavaScript.</li>
+      </ul>
+
+      <h3>Course Lessons</h3>
+      <table>
+        <caption>Youtube lessons and duration</caption>
+        <thead>
+          <tr>
+            <th scope="col">Lesson</th>
+            <th scope="col">Duration</th>
+            <th scope="col">description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Foundations</th>
+            <td>4 weeks</td>
+            <td>HTML basics</td>
+          </tr>
+          <tr>
+            <th scope="row">Frontend</th>
+            <td>6 weeks</td>
+            <td>Layouts and forms</td>
+          </tr>
+          <tr>
+            <th scope="row">Portfolio</th>
+            <td>2 weeks</td>
+            <td>Projects and feedback</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Media</h3>
+      <img src="assets/media/web2.jpg" alt="Wed Dev setup" width="320">
+      <p>;esson Audio:</p>
+      <audio controls>
+        <source src="assets/media/MaroonMemories.mp3" type="audio/mpeg">
+        Your browser does not support the audio.
+      </audio>
+      <p>Course video:</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ucr8H9wmrDw?si=ZTKZswbrGWABVqqB" title="Speedix"></iframe>
+    </section>
+
+    <section id="form">
+      <h2>Sign Up Form</h2>
+      <p>Fields marked with * are required.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal</legend>
+          <label for="first">First name *</label>
+          <input id="first" name="first" type="text" placeholder="Gideon" required>
+          <label for="last">Last name *</label>
+          <input id="last" name="last" type="text" placeholder="Thuku" required>
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" placeholder="gideonthuku12@gmail.com" required>
+          <label for="phone">Phone (Kenya) *</label>
+          <input id="phone" name="phone" type="tel" placeholder="+254753620901" required>
+          <label for="password">Password *</label>
+          <input id="password" name="password" type="password" placeholder="@plp2029" minlength="8" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="city">City *</label>
+          <input id="city" name="city" type="text" placeholder="Nairobi" required>
+          <label for="start">Start date *</label>
+          <input id="start" name="start" type="date" required>
+          <p>Mode *</p>
+          <label><input type="radio" name="mode" value="in-person" required> In-person</label>
+          <label><input type="radio" name="mode" value="virtual"> Virtual</label>
+          <p>Topics</p>
+          <label><input type="checkbox" name="topics" value="html"> HTML</label>
+          <label><input type="checkbox" name="topics" value="css"> CSS</label>
+          <label for="seats">Seats (1–5) *</label>
+          <input id="seats" name="seats" type="number" min="1" max="5" value="1" required>
+          <label for="site">Website</label>
+          <input id="site" name="site" type="url" placeholder="https://africaability.com">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Accessibility needs or other info"></textarea>
+          <label for="reg">Your Kenyan I.D</label>
+          <input id="reg" name="reg" value="PLP 003" readonly>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>PLP Web Dev is Free</p>
+  </footer>
+</body>
+</html>
